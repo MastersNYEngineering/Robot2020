@@ -11,7 +11,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 import java.lang.Math;
 
-@TeleOp(name="Main: Differential(1)", group="Iterative Opmode")
+@TeleOp(name="Main: Differential", group="Iterative Opmode")
 public class Differential extends OpMode {
     private DcMotor drive;
     private CRServo servo;
@@ -39,7 +39,7 @@ public class Differential extends OpMode {
         servo.setPower(speed);
     }
     
-    @Override 
+    @Override
     public void init() {
         drive = hardwareMap.get(DcMotor.class, "central_motor");
         drive.setMode(DcMotor.RunMode.RUN_USING_ENCODERS);
