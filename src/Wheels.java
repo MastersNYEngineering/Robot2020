@@ -13,17 +13,16 @@ import com.qualcomm.robotcore.util.Range;
 
 import java.lang.Math;
 
-// Robot is an abstraction class representing a robot.
-public class Robot {
+// Wheels is an abstraction class for interfacing with multiple wheels on
+// a single robot.
+public class Wheels<T> {
 
-    private HardwareMap hardwareMap; // The robot's hardware map
-    private Gamepad gamepad; // The main gamepad controller for this robot
+    private T[] wheels;
 
-    private Wheels wheels;
-
-    Robot(HardwareMap hardwareMap, Gamepad gamepad) {
-        this.hardwareMap = hardwareMap;
-        this.gamepad = gamepad;
-
+    Robot(int wheelCount, T wheelType) {
+        T wheels[] = new T[wheelCount];
+        for (int i = 0; i < wheelCount; i++) {
+            
+        }
     }
 }
