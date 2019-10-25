@@ -55,7 +55,7 @@ public class NewSquareDrive extends OpMode {
      private CRServo init_CRservo(String id) {
         CRServo s = null;
         s = hardwareMap.get(CRServo.class, id);
-        // s.setDirection(CRServo.Direction.FORWARD);
+        s.setDirection(CRServo.Direction.FORWARD);
         return s;
     }
 
