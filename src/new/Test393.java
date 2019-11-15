@@ -74,9 +74,6 @@ public class Test393 extends OpMode
         // - This uses basic math to combine motions and is easier to drive straight.
         double up    = gamepad1.right_trigger;
         double down  = gamepad1.left_trigger;
-        
-        double upPower    = Range.clip(up, 0, 0.85) ;
-        double downPower   = Range.clip(down, -0.85, 0) ;
 
         // Tank Mode uses one stick to control each wheel.
         // - This requires no math, but it is hard to drive forward slowly and keep straight.
